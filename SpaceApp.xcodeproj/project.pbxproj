@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD249CD224F468C600A47DC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249CD124F468C600A47DC2 /* AppDelegate.m */; };
+		AD249CD524F468C600A47DC2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249CD424F468C600A47DC2 /* SceneDelegate.m */; };
+		AD249CDB24F468C600A47DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD249CD924F468C600A47DC2 /* Main.storyboard */; };
+		AD249CDE24F468C600A47DC2 /* SpaceApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD249CDC24F468C600A47DC2 /* SpaceApp.xcdatamodeld */; };
+		AD249CE024F468CB00A47DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD249CDF24F468CB00A47DC2 /* Assets.xcassets */; };
+		AD249CE624F468CB00A47DC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249CE524F468CB00A47DC2 /* main.m */; };
+		AD249CF024F468CB00A47DC2 /* SpaceAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249CEF24F468CB00A47DC2 /* SpaceAppTests.m */; };
+		AD249CFC24F468F700A47DC2 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249CFB24F468F700A47DC2 /* TabBarController.m */; };
+		AD249CFF24F4C8E300A47DC2 /* APODViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249CFE24F4C8E300A47DC2 /* APODViewController.m */; };
+		AD249D0524F68B7800A47DC2 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D0424F68B7800A47DC2 /* NewsViewController.m */; };
+		AD249D0824F691F700A47DC2 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D0724F691F700A47DC2 /* NewsCell.m */; };
+		AD249D0E24F693DD00A47DC2 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D0D24F693DD00A47DC2 /* NetworkManager.m */; };
+		AD249D1224F695C400A47DC2 /* NewsViewControllerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D1124F695C400A47DC2 /* NewsViewControllerPresenter.m */; };
+		AD249D2124F9A9F400A47DC2 /* AdditionalNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D2024F9A9F400A47DC2 /* AdditionalNewsViewController.m */; };
+		AD249D2424FAFDEC00A47DC2 /* IssViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D2324FAFDEB00A47DC2 /* IssViewController.m */; };
+		AD249D2724FC5B2900A47DC2 /* AdditionalIssViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D2624FC5B2900A47DC2 /* AdditionalIssViewController.m */; };
+		AD249D2A24FC5E4600A47DC2 /* IssCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D2924FC5E4600A47DC2 /* IssCell.m */; };
+		AD249D3024FC6E5100A47DC2 /* IssViewControllerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D2F24FC6E5100A47DC2 /* IssViewControllerPresenter.m */; };
+		AD249D3324FC74A200A47DC2 /* IssPassViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D3224FC74A200A47DC2 /* IssPassViewModel.m */; };
+		AD249D3624FEDDDB00A47DC2 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD249D3524FEDDDB00A47DC2 /* UserNotifications.framework */; };
+		AD249D3924FF084600A47DC2 /* StreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D3824FF084600A47DC2 /* StreamViewController.m */; };
+		AD249D3C24FF14B700A47DC2 /* StreamViewControllerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D3B24FF14B700A47DC2 /* StreamViewControllerPresenter.m */; };
+		AD249D3F24FF18E400A47DC2 /* IssPositionModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D3E24FF18E400A47DC2 /* IssPositionModelItem.m */; };
+		AD249D4225027CE000A47DC2 /* NewsCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D4125027CE000A47DC2 /* NewsCellItem.m */; };
+		AD249D452502CB8400A47DC2 /* FavouriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D442502CB8400A47DC2 /* FavouriteViewController.m */; };
+		AD249D5F2502E1A500A47DC2 /* NewsModel+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D5D2502E1A500A47DC2 /* NewsModel+CoreDataClass.m */; };
+		AD249D602502E1A500A47DC2 /* NewsModel+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249D5E2502E1A500A47DC2 /* NewsModel+CoreDataProperties.m */; };
+		AD2B73812504291C0042D292 /* APODCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2B73802504291C0042D292 /* APODCollectionViewCell.m */; };
+		AD2B7384250429430042D292 /* APODViewControllerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2B7383250429430042D292 /* APODViewControllerPresenter.m */; };
+		AD2B73872504304D0042D292 /* LoadingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2B73862504304D0042D292 /* LoadingCollectionViewCell.m */; };
+		AD2B738A25043A7F0042D292 /* APODItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2B738925043A7F0042D292 /* APODItem.m */; };
+		AD2B738D25047C590042D292 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2B738C25047C590042D292 /* ModalViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD249CEC24F468CB00A47DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD249CC524F468C600A47DC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD249CCC24F468C600A47DC2;
+			remoteInfo = SpaceApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD249CCD24F468C600A47DC2 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD249CD024F468C600A47DC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD249CD124F468C600A47DC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD249CD324F468C600A47DC2 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		AD249CD424F468C600A47DC2 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		AD249CDA24F468C600A47DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD249CDD24F468C600A47DC2 /* SpaceApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpaceApp.xcdatamodel; sourceTree = "<group>"; };
+		AD249CDF24F468CB00A47DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD249CE424F468CB00A47DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD249CE524F468CB00A47DC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD249CEB24F468CB00A47DC2 /* SpaceAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD249CEF24F468CB00A47DC2 /* SpaceAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceAppTests.m; sourceTree = "<group>"; };
+		AD249CF124F468CB00A47DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD249CFA24F468F700A47DC2 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		AD249CFB24F468F700A47DC2 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		AD249CFD24F4C8E300A47DC2 /* APODViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APODViewController.h; sourceTree = "<group>"; };
+		AD249CFE24F4C8E300A47DC2 /* APODViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APODViewController.m; sourceTree = "<group>"; };
+		AD249D0324F68B7800A47DC2 /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		AD249D0424F68B7800A47DC2 /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		AD249D0624F691F700A47DC2 /* NewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		AD249D0724F691F700A47DC2 /* NewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		AD249D0C24F693DD00A47DC2 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		AD249D0D24F693DD00A47DC2 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		AD249D1024F695C400A47DC2 /* NewsViewControllerPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewControllerPresenter.h; sourceTree = "<group>"; };
+		AD249D1124F695C400A47DC2 /* NewsViewControllerPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewControllerPresenter.m; sourceTree = "<group>"; };
+		AD249D1F24F9A9F400A47DC2 /* AdditionalNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdditionalNewsViewController.h; sourceTree = "<group>"; };
+		AD249D2024F9A9F400A47DC2 /* AdditionalNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdditionalNewsViewController.m; sourceTree = "<group>"; };
+		AD249D2224FAFDEB00A47DC2 /* IssViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssViewController.h; sourceTree = "<group>"; };
+		AD249D2324FAFDEB00A47DC2 /* IssViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssViewController.m; sourceTree = "<group>"; };
+		AD249D2524FC5B2900A47DC2 /* AdditionalIssViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdditionalIssViewController.h; sourceTree = "<group>"; };
+		AD249D2624FC5B2900A47DC2 /* AdditionalIssViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdditionalIssViewController.m; sourceTree = "<group>"; };
+		AD249D2824FC5E4600A47DC2 /* IssCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssCell.h; sourceTree = "<group>"; };
+		AD249D2924FC5E4600A47DC2 /* IssCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssCell.m; sourceTree = "<group>"; };
+		AD249D2E24FC6E5100A47DC2 /* IssViewControllerPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssViewControllerPresenter.h; sourceTree = "<group>"; };
+		AD249D2F24FC6E5100A47DC2 /* IssViewControllerPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssViewControllerPresenter.m; sourceTree = "<group>"; };
+		AD249D3124FC74A200A47DC2 /* IssPassViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssPassViewModel.h; sourceTree = "<group>"; };
+		AD249D3224FC74A200A47DC2 /* IssPassViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssPassViewModel.m; sourceTree = "<group>"; };
+		AD249D3524FEDDDB00A47DC2 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AD249D3724FF084500A47DC2 /* StreamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamViewController.h; sourceTree = "<group>"; };
+		AD249D3824FF084600A47DC2 /* StreamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreamViewController.m; sourceTree = "<group>"; };
+		AD249D3A24FF14B700A47DC2 /* StreamViewControllerPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamViewControllerPresenter.h; sourceTree = "<group>"; };
+		AD249D3B24FF14B700A47DC2 /* StreamViewControllerPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreamViewControllerPresenter.m; sourceTree = "<group>"; };
+		AD249D3D24FF18E400A47DC2 /* IssPositionModelItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssPositionModelItem.h; sourceTree = "<group>"; };
+		AD249D3E24FF18E400A47DC2 /* IssPositionModelItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssPositionModelItem.m; sourceTree = "<group>"; };
+		AD249D4025027CE000A47DC2 /* NewsCellItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsCellItem.h; sourceTree = "<group>"; };
+		AD249D4125027CE000A47DC2 /* NewsCellItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsCellItem.m; sourceTree = "<group>"; };
+		AD249D432502CB8400A47DC2 /* FavouriteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavouriteViewController.h; sourceTree = "<group>"; };
+		AD249D442502CB8400A47DC2 /* FavouriteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavouriteViewController.m; sourceTree = "<group>"; };
+		AD249D5B2502E1A500A47DC2 /* NewsModel+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewsModel+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AD249D5C2502E1A500A47DC2 /* NewsModel+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewsModel+CoreDataClass.h"; sourceTree = "<group>"; };
+		AD249D5D2502E1A500A47DC2 /* NewsModel+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NewsModel+CoreDataClass.m"; sourceTree = "<group>"; };
+		AD249D5E2502E1A500A47DC2 /* NewsModel+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NewsModel+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AD2B737F2504291C0042D292 /* APODCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APODCollectionViewCell.h; sourceTree = "<group>"; };
+		AD2B73802504291C0042D292 /* APODCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APODCollectionViewCell.m; sourceTree = "<group>"; };
+		AD2B7382250429430042D292 /* APODViewControllerPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APODViewControllerPresenter.h; sourceTree = "<group>"; };
+		AD2B7383250429430042D292 /* APODViewControllerPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APODViewControllerPresenter.m; sourceTree = "<group>"; };
+		AD2B73852504304D0042D292 /* LoadingCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingCollectionViewCell.h; sourceTree = "<group>"; };
+		AD2B73862504304D0042D292 /* LoadingCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingCollectionViewCell.m; sourceTree = "<group>"; };
+		AD2B738825043A7F0042D292 /* APODItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APODItem.h; sourceTree = "<group>"; };
+		AD2B738925043A7F0042D292 /* APODItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APODItem.m; sourceTree = "<group>"; };
+		AD2B738B25047C590042D292 /* ModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		AD2B738C25047C590042D292 /* ModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD249CCA24F468C600A47DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD249D3624FEDDDB00A47DC2 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD249CE824F468CB00A47DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD249CC424F468C600A47DC2 = {
+			isa = PBXGroup;
+			children = (
+				AD249D5B2502E1A500A47DC2 /* NewsModel+CoreDataProperties.h */,
+				AD249D5C2502E1A500A47DC2 /* NewsModel+CoreDataClass.h */,
+				AD249D5D2502E1A500A47DC2 /* NewsModel+CoreDataClass.m */,
+				AD249D5E2502E1A500A47DC2 /* NewsModel+CoreDataProperties.m */,
+				AD249CCF24F468C600A47DC2 /* SpaceApp */,
+				AD249CEE24F468CB00A47DC2 /* SpaceAppTests */,
+				AD249CCE24F468C600A47DC2 /* Products */,
+				AD249D3424FEDDDA00A47DC2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD249CCE24F468C600A47DC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD249CCD24F468C600A47DC2 /* SpaceApp.app */,
+				AD249CEB24F468CB00A47DC2 /* SpaceAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD249CCF24F468C600A47DC2 /* SpaceApp */ = {
+			isa = PBXGroup;
+			children = (
+				AD249CD024F468C600A47DC2 /* AppDelegate.h */,
+				AD249CD124F468C600A47DC2 /* AppDelegate.m */,
+				AD249CD324F468C600A47DC2 /* SceneDelegate.h */,
+				AD249CD424F468C600A47DC2 /* SceneDelegate.m */,
+				AD249CD924F468C600A47DC2 /* Main.storyboard */,
+				AD249CDF24F468CB00A47DC2 /* Assets.xcassets */,
+				AD249CE424F468CB00A47DC2 /* Info.plist */,
+				AD249CE524F468CB00A47DC2 /* main.m */,
+				AD249CDC24F468C600A47DC2 /* SpaceApp.xcdatamodeld */,
+				AD2B73A82504F3930042D292 /* TabBar */,
+				AD2B73952504F2100042D292 /* Favourite */,
+				AD2B73942504F1C30042D292 /* APOD */,
+				AD2B73932504F1590042D292 /* Stream */,
+				AD2B73922504F1130042D292 /* ISS */,
+				AD2B73912504F0DA0042D292 /* News */,
+			);
+			path = SpaceApp;
+			sourceTree = "<group>";
+		};
+		AD249CEE24F468CB00A47DC2 /* SpaceAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD249CEF24F468CB00A47DC2 /* SpaceAppTests.m */,
+				AD249CF124F468CB00A47DC2 /* Info.plist */,
+			);
+			path = SpaceAppTests;
+			sourceTree = "<group>";
+		};
+		AD249D0A24F693A300A47DC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD249D0C24F693DD00A47DC2 /* NetworkManager.h */,
+				AD249D0D24F693DD00A47DC2 /* NetworkManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD249D0B24F693BA00A47DC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD249CFA24F468F700A47DC2 /* TabBarController.h */,
+				AD249CFB24F468F700A47DC2 /* TabBarController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD249D3424FEDDDA00A47DC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD249D3524FEDDDB00A47DC2 /* UserNotifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD2B73912504F0DA0042D292 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B73A62504F3260042D292 /* Model */,
+				AD2B73A42504F30D0042D292 /* View */,
+				AD2B73A22504F2FF0042D292 /* Presenter */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		AD2B73922504F1130042D292 /* ISS */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B73A12504F2EB0042D292 /* Model */,
+				AD2B73A02504F2D70042D292 /* View */,
+				AD2B739F2504F2CE0042D292 /* Presenter */,
+			);
+			path = ISS;
+			sourceTree = "<group>";
+		};
+		AD2B73932504F1590042D292 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B739E2504F2BC0042D292 /* Model */,
+				AD2B739D2504F2B30042D292 /* View */,
+				AD2B739C2504F2AB0042D292 /* Presenter */,
+			);
+			path = Stream;
+			sourceTree = "<group>";
+		};
+		AD2B73942504F1C30042D292 /* APOD */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B739B2504F2970042D292 /* Presenter */,
+				AD2B73982504F2650042D292 /* View */,
+				AD2B73962504F24A0042D292 /* Model */,
+			);
+			path = APOD;
+			sourceTree = "<group>";
+		};
+		AD2B73952504F2100042D292 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				AD249D432502CB8400A47DC2 /* FavouriteViewController.h */,
+				AD249D442502CB8400A47DC2 /* FavouriteViewController.m */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		AD2B73962504F24A0042D292 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B738825043A7F0042D292 /* APODItem.h */,
+				AD2B738925043A7F0042D292 /* APODItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD2B73982504F2650042D292 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD249CFD24F4C8E300A47DC2 /* APODViewController.h */,
+				AD249CFE24F4C8E300A47DC2 /* APODViewController.m */,
+				AD2B737F2504291C0042D292 /* APODCollectionViewCell.h */,
+				AD2B73802504291C0042D292 /* APODCollectionViewCell.m */,
+				AD2B73852504304D0042D292 /* LoadingCollectionViewCell.h */,
+				AD2B73862504304D0042D292 /* LoadingCollectionViewCell.m */,
+				AD2B738B25047C590042D292 /* ModalViewController.h */,
+				AD2B738C25047C590042D292 /* ModalViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD2B739B2504F2970042D292 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AD2B7382250429430042D292 /* APODViewControllerPresenter.h */,
+				AD2B7383250429430042D292 /* APODViewControllerPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AD2B739C2504F2AB0042D292 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AD249D3A24FF14B700A47DC2 /* StreamViewControllerPresenter.h */,
+				AD249D3B24FF14B700A47DC2 /* StreamViewControllerPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AD2B739D2504F2B30042D292 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD249D3724FF084500A47DC2 /* StreamViewController.h */,
+				AD249D3824FF084600A47DC2 /* StreamViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD2B739E2504F2BC0042D292 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD249D3D24FF18E400A47DC2 /* IssPositionModelItem.h */,
+				AD249D3E24FF18E400A47DC2 /* IssPositionModelItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD2B739F2504F2CE0042D292 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AD249D2E24FC6E5100A47DC2 /* IssViewControllerPresenter.h */,
+				AD249D2F24FC6E5100A47DC2 /* IssViewControllerPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AD2B73A02504F2D70042D292 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD249D2224FAFDEB00A47DC2 /* IssViewController.h */,
+				AD249D2324FAFDEB00A47DC2 /* IssViewController.m */,
+				AD249D2524FC5B2900A47DC2 /* AdditionalIssViewController.h */,
+				AD249D2624FC5B2900A47DC2 /* AdditionalIssViewController.m */,
+				AD249D2824FC5E4600A47DC2 /* IssCell.h */,
+				AD249D2924FC5E4600A47DC2 /* IssCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD2B73A12504F2EB0042D292 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD249D3124FC74A200A47DC2 /* IssPassViewModel.h */,
+				AD249D3224FC74A200A47DC2 /* IssPassViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD2B73A22504F2FF0042D292 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AD249D1024F695C400A47DC2 /* NewsViewControllerPresenter.h */,
+				AD249D1124F695C400A47DC2 /* NewsViewControllerPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AD2B73A42504F30D0042D292 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD249D0624F691F700A47DC2 /* NewsCell.h */,
+				AD249D0724F691F700A47DC2 /* NewsCell.m */,
+				AD249D0324F68B7800A47DC2 /* NewsViewController.h */,
+				AD249D0424F68B7800A47DC2 /* NewsViewController.m */,
+				AD249D1F24F9A9F400A47DC2 /* AdditionalNewsViewController.h */,
+				AD249D2024F9A9F400A47DC2 /* AdditionalNewsViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD2B73A62504F3260042D292 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD249D4025027CE000A47DC2 /* NewsCellItem.h */,
+				AD249D4125027CE000A47DC2 /* NewsCellItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD2B73A82504F3930042D292 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AD249D0A24F693A300A47DC2 /* Model */,
+				AD249D0B24F693BA00A47DC2 /* View */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD249CCC24F468C600A47DC2 /* SpaceApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD249CF424F468CB00A47DC2 /* Build configuration list for PBXNativeTarget "SpaceApp" */;
+			buildPhases = (
+				AD249CC924F468C600A47DC2 /* Sources */,
+				AD249CCA24F468C600A47DC2 /* Frameworks */,
+				AD249CCB24F468C600A47DC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceApp;
+			productName = SpaceApp;
+			productReference = AD249CCD24F468C600A47DC2 /* SpaceApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD249CEA24F468CB00A47DC2 /* SpaceAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD249CF724F468CB00A47DC2 /* Build configuration list for PBXNativeTarget "SpaceAppTests" */;
+			buildPhases = (
+				AD249CE724F468CB00A47DC2 /* Sources */,
+				AD249CE824F468CB00A47DC2 /* Frameworks */,
+				AD249CE924F468CB00A47DC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD249CED24F468CB00A47DC2 /* PBXTargetDependency */,
+			);
+			name = SpaceAppTests;
+			productName = SpaceAppTests;
+			productReference = AD249CEB24F468CB00A47DC2 /* SpaceAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD249CC524F468C600A47DC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Владислав Станкевич";
+				TargetAttributes = {
+					AD249CCC24F468C600A47DC2 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					AD249CEA24F468CB00A47DC2 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = AD249CCC24F468C600A47DC2;
+					};
+				};
+			};
+			buildConfigurationList = AD249CC824F468C600A47DC2 /* Build configuration list for PBXProject "SpaceApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD249CC424F468C600A47DC2;
+			productRefGroup = AD249CCE24F468C600A47DC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD249CCC24F468C600A47DC2 /* SpaceApp */,
+				AD249CEA24F468CB00A47DC2 /* SpaceAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD249CCB24F468C600A47DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD249CE024F468CB00A47DC2 /* Assets.xcassets in Resources */,
+				AD249CDB24F468C600A47DC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD249CE924F468CB00A47DC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD249CC924F468C600A47DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD249D4225027CE000A47DC2 /* NewsCellItem.m in Sources */,
+				AD2B73872504304D0042D292 /* LoadingCollectionViewCell.m in Sources */,
+				AD249D1224F695C400A47DC2 /* NewsViewControllerPresenter.m in Sources */,
+				AD249CE624F468CB00A47DC2 /* main.m in Sources */,
+				AD249D2424FAFDEC00A47DC2 /* IssViewController.m in Sources */,
+				AD249CD224F468C600A47DC2 /* AppDelegate.m in Sources */,
+				AD249D0824F691F700A47DC2 /* NewsCell.m in Sources */,
+				AD249D3324FC74A200A47DC2 /* IssPassViewModel.m in Sources */,
+				AD249D452502CB8400A47DC2 /* FavouriteViewController.m in Sources */,
+				AD249D0524F68B7800A47DC2 /* NewsViewController.m in Sources */,
+				AD2B738A25043A7F0042D292 /* APODItem.m in Sources */,
+				AD249D3024FC6E5100A47DC2 /* IssViewControllerPresenter.m in Sources */,
+				AD249D2124F9A9F400A47DC2 /* AdditionalNewsViewController.m in Sources */,
+				AD249CFC24F468F700A47DC2 /* TabBarController.m in Sources */,
+				AD249CFF24F4C8E300A47DC2 /* APODViewController.m in Sources */,
+				AD249D5F2502E1A500A47DC2 /* NewsModel+CoreDataClass.m in Sources */,
+				AD2B738D25047C590042D292 /* ModalViewController.m in Sources */,
+				AD2B73812504291C0042D292 /* APODCollectionViewCell.m in Sources */,
+				AD249D3924FF084600A47DC2 /* StreamViewController.m in Sources */,
+				AD249CDE24F468C600A47DC2 /* SpaceApp.xcdatamodeld in Sources */,
+				AD249D0E24F693DD00A47DC2 /* NetworkManager.m in Sources */,
+				AD249D602502E1A500A47DC2 /* NewsModel+CoreDataProperties.m in Sources */,
+				AD249D3F24FF18E400A47DC2 /* IssPositionModelItem.m in Sources */,
+				AD249CD524F468C600A47DC2 /* SceneDelegate.m in Sources */,
+				AD2B7384250429430042D292 /* APODViewControllerPresenter.m in Sources */,
+				AD249D3C24FF14B700A47DC2 /* StreamViewControllerPresenter.m in Sources */,
+				AD249D2A24FC5E4600A47DC2 /* IssCell.m in Sources */,
+				AD249D2724FC5B2900A47DC2 /* AdditionalIssViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD249CE724F468CB00A47DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD249CF024F468CB00A47DC2 /* SpaceAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD249CED24F468CB00A47DC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD249CCC24F468C600A47DC2 /* SpaceApp */;
+			targetProxy = AD249CEC24F468CB00A47DC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD249CD924F468C600A47DC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD249CDA24F468C600A47DC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD249CF224F468CB00A47DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD249CF324F468CB00A47DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD249CF524F468CB00A47DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C46KC9Y2PT;
+				INFOPLIST_FILE = SpaceApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stankevich.SpaceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD249CF624F468CB00A47DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C46KC9Y2PT;
+				INFOPLIST_FILE = SpaceApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stankevich.SpaceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD249CF824F468CB00A47DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpaceAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stankevich.SpaceAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceApp.app/SpaceApp";
+			};
+			name = Debug;
+		};
+		AD249CF924F468CB00A47DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpaceAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stankevich.SpaceAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceApp.app/SpaceApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD249CC824F468C600A47DC2 /* Build configuration list for PBXProject "SpaceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD249CF224F468CB00A47DC2 /* Debug */,
+				AD249CF324F468CB00A47DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD249CF424F468CB00A47DC2 /* Build configuration list for PBXNativeTarget "SpaceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD249CF524F468CB00A47DC2 /* Debug */,
+				AD249CF624F468CB00A47DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD249CF724F468CB00A47DC2 /* Build configuration list for PBXNativeTarget "SpaceAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD249CF824F468CB00A47DC2 /* Debug */,
+				AD249CF924F468CB00A47DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD249CDC24F468C600A47DC2 /* SpaceApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD249CDD24F468C600A47DC2 /* SpaceApp.xcdatamodel */,
+			);
+			currentVersion = AD249CDD24F468C600A47DC2 /* SpaceApp.xcdatamodel */;
+			path = SpaceApp.xcdatamodeld;
+			sourceTree = "<group>";
+			usesTabs = 0;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AD249CC524F468C600A47DC2 /* Project object */;
+}
